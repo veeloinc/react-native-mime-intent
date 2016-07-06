@@ -16,6 +16,11 @@ public class MimeIntentManager extends ReactContextBaseJavaModule {
         super(reactContext);
     }
 
+    @Override
+    public String getName() {
+        return "MimeIntentManager";
+    }
+
     /**
      * Starts a corresponding external activity for the given URL.
      *
