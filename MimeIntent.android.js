@@ -1,10 +1,9 @@
 'use strict';
 
 var MimeIntentManager = require('react-native').NativeModules.MimeIntentManager;
-var Promise = require('bluebird');
 
-var _canOpenURLWithMime = Promise.promisify(MimeIntentManager.canOpenURLWithMime);
-var _openURLWithMime = Promise.promisify(MimeIntentManager.openURLWithMime);
+var _canOpenURLWithMime = MimeIntentManager.canOpenURLWithMime;
+var _openURLWithMime = MimeIntentManager.openURLWithMime;
 
 var convertError = (err) => {
   if (err.isOperational && err.cause) {
@@ -19,10 +18,16 @@ var convertError = (err) => {
 module.exports = {
     canOpenURLWithMime: function(url, mime) {
         return _canOpenURLWithMime(url, mime)
+            .then(function() {
+                console.log('can open success');
+            })
             .catch(convertError);
     },
     openURLWithMime: function(url, mime) {
         return _openURLWithMime(url, mime)
+            .then(function() {
+                console.log('open success');
+            })
             .catch(convertError);
     }
 };

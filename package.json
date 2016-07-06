@@ -18,7 +18,6 @@
   "author": "Veelo Inc.",
   "license": "Apache License v2.0",
   "dependencies": {
-    "bluebird": "^3.4.1"
   },
   "devDependencies": {
     "react-native": "^0.25.1"
