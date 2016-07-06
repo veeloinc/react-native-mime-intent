@@ -1,0 +1,25 @@
+{
+  "name": "react-native-mime-intent",
+  "version": "0.1.0",
+  "description": "Pass mimetypes to Android Intent from React Native",
+  "main": "MimeIntent.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:veeloinc/react-native-mime-intent.git"
+  },
+  "keywords": [
+    "react-component",
+    "react-native",
+    "android"
+  ],
+  "author": "Veelo Inc.",
+  "license": "Apache License v2.0",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "react-native": "^0.25.1"
+  }
+}
