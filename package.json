@@ -2,7 +2,7 @@
   "name": "react-native-mime-intent",
   "version": "0.1.0",
   "description": "Pass mimetypes to Android Intent from React Native",
-  "main": "MimeIntent.js",
+  "main": "MimeIntent.android.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
