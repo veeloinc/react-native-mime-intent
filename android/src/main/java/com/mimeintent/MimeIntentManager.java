@@ -29,6 +29,7 @@ public class MimeIntentManager extends ReactContextBaseJavaModule {
      *
      * @param url the URL to open
      * @param mime the mimetype of the content
+     * @param promise a promise that is always resolved with a boolean argument
      */
     @ReactMethod
     public void openURLWithMime(String url, String mime, Promise promise) {
@@ -70,6 +71,7 @@ public class MimeIntentManager extends ReactContextBaseJavaModule {
      * Determine whether or not an installed app can handle a given URL.
      *
      * @param url the URL to open
+     * @param mime the mimetype of the content
      * @param promise a promise that is always resolved with a boolean argument
      */
     @ReactMethod
