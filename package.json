@@ -1,6 +1,6 @@
 {
   "name": "react-native-mime-intent",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Pass mimetypes to Android Intent from React Native",
   "main": "MimeIntent.android.js",
   "scripts": {
