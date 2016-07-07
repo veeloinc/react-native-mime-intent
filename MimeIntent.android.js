@@ -18,16 +18,10 @@ var convertError = (err) => {
 module.exports = {
     canOpenURLWithMime: function(url, mime) {
         return _canOpenURLWithMime(url, mime)
-            .then(function() {
-                console.log('can open success');
-            })
             .catch(convertError);
     },
     openURLWithMime: function(url, mime) {
         return _openURLWithMime(url, mime)
-            .then(function() {
-                console.log('open success');
-            })
             .catch(convertError);
     }
 };
