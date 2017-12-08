@@ -22,12 +22,12 @@ dependencies {
 }
 ```
 
-* register module (in `MainActivity.java`)
+* register module (in `MainApplication.java`)
 
 ```java
 import com.mimeintent.MimeIntentPackage; // <------- add package
 // ...
-public class MainActivity extends ReactActivity {
+public class MainApplication extends ReactActivity {
    // ...
     @Override
     protected List<ReactPackage> getPackages() {
